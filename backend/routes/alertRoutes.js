@@ -3,8 +3,8 @@ const twilio = require('twilio');
 const router = express.Router();
 
 // Put your Twilio credentials here (In production, put these in .env)
-const accountSid = 'ACdc6f39f84854ca23cf120d13746d9d03'; // Replace with yours
-const authToken = '7bdb2bfbb391be71b1e1f77dc4a93b71';             // Replace with yours
+const accountSid = 'process.env.TWILIO_SID'; // Replace with yours
+const authToken = 'process.env.AUTH';             // Replace with yours
 const twilioPhone = '+1 218 306 0442';                  // Replace with your Twilio SMS number
 const twilioWhatsApp = 'whatsapp:+14155238886';     // This is the universal Twilio Sandbox number
 
